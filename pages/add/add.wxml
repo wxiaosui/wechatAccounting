@@ -1,0 +1,35 @@
+<!--pages/add/add.wxml-->
+<view class="content">
+    <view class="header">
+        <view class="header-btn">
+            <view bindtap="btnR" class="{{btnNO}}">{{btnR}}</view>
+            <view bindtap="btnL" class="{{btnOFF}}">{{btnL}}</view>
+        </view>
+    </view>
+    <view class="add-list">
+        <form catchsubmit="formSubmit">
+            <view class="account">
+                <view class="tap">账目详情</view>
+                <input name="inputdetail"  type="text" />
+            </view>
+
+            <view class="account">
+                <view class="tap">账目数额</view>
+                <input name="inputamount" type="digit" />
+            </view>
+
+            <view class="account">
+                <view class="tap">时间</view>
+                <picker class="pick" mode="date" value="{{time}}" start="2015-09-01" end="{{time}}" bindchange="bindDateChange">
+                    <view class="picker">{{time}}</view>
+                </picker>
+            </view>
+      
+            <view style="margin-top:10%;">
+                <button formType="submit" type="primary" loading="{{buttonLoading}}">
+                 记一笔 </button>
+            </view>
+            <p style="font-size:12px;color:#424c50;" >只对本月账单记录，记录上月会自动消除</p>
+        </form>
+    </view>
+</view>

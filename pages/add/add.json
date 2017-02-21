@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#424c50",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "添加记录",
+  "backgroundColor": "#424c50",
+  "backgroundTextStyle": "#424c50",
+  "disableScroll":"true"
+}

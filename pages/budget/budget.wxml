@@ -1,0 +1,7 @@
+<!--pages/budget/budget.wxml-->
+<view class="xinxin">
+    <p>月度预算(元)</p>
+    <input placeholder="请输入预算金额" name="inputamount" type="digit" bindinput="getnumber"/>
+    <button type="primary" bindtap="budget">完成</button>
+    <p style="color:#424c50;">预算与记录信息会在下月自动清除,不输入默认为 0</p>
+</view>

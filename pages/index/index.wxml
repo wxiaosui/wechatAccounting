@@ -1,0 +1,36 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <p class="top-budget">{{budget}}</p>
+    <view class="top-number">{{num}}
+      <p class="yuan">{{currency}}</p>
+    </view>
+    <progress class="top-progress" percent='{{proportion}}' show-info active color="#00bc12" stroke-width="3" />
+  </view>
+  <view class="tapy">
+    <view class="account-list-time">{{times}}</view>
+    <view class="account-list-detail">{{details}}</view>
+    <view class="account-list-amount">{{amount}}</view>
+  </view>
+  <view class="list-content">
+    <scroll-view style="height: 800rpx;" scroll-y="true">
+      <block wx:for="{{accountData}}" wx:key="accountData">
+        <view class="recording">
+          <scroll-view scroll-x="true" style="width: 100%;white-space: nowrap;">
+            <view class="account-list-time account-list">{{item.time}}</view>
+            <view class="account-list-detail account-list">{{item.detail}}</view>
+            <view class="account-list-amount account-list">{{item.amount}}</view>
+            <view class="account-list-del account-list" id="btn">
+              <button class="account-list-del-button" size="mini" type="warn" data-index-key="{{index}}" bindtap="deleteRow">删除</button>
+            </view>
+          </scroll-view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+<view class="floot">
+  <view bindtap="add" style="border-right:1px #fff solid;">添加</view>
+  <view bindtap="setting">设置</view>
+</view>

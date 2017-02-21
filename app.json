@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/add/add",
+    "pages/budget/budget" 
+    ],
+  "window":{
+    "navigationBarBackgroundColor": "#424c50",
+    "navigationBarTitleText": "手机记账助手",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#424c50"
+  }
+}

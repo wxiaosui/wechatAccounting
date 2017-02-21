@@ -1,0 +1,24 @@
+/* pages/budget/budget.wxss */
+.xinxin{
+    padding:5% 10%;
+}
+.xinxin p{
+    display: inline-block;
+    font-size: 12px;
+    color: #424c50;
+    width: 100%;
+    line-height: 40px;
+}
+.xinxin input{
+    display: block;
+    font-size: 12px;
+    height: 40px;
+    border-bottom: 1px #efefef solid;
+    width: 100%;
+}
+.xinxin button{
+    margin-top: 35px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+}
